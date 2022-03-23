@@ -1,0 +1,42 @@
+{
+  "name": "api_agenda_ifce",
+  "version": "1.0.0",
+  "description": "Api REST do App AgendaIFCE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/server.js",
+    "dev": "nodemon ./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanildoBorges/api_agenda_ifce.git"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "agenda",
+    "ifce",
+    "nodejs"
+  ],
+  "author": "IvanildoBorges\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D B\u001b[2~orges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanildoBorges/api_agenda_ifce/issues"
+  },
+  "homepage": "https://github.com/IvanildoBorges/api_agenda_ifce#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "bin": {
+    "api_agenda_ifce": "bin/server.js"
+  }
+}
