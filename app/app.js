@@ -4,6 +4,8 @@ const morgan = require("morgan");               //Importa a biblioteca morga par
 
 //importandos as rotas
 const rotaHome = require('./routes/home');
+const rotaAtividade = require('./routes/atividade');
+const rotaVideo = require('./routes/video');
 
 //Monitora a execucao das rotas para dar um callback (log)
 app.use(morgan('dev'));
@@ -16,7 +18,7 @@ app.use(express.json());
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header(
-        'Access-Control-Allow-Header',
+        'Access-Control-Allow-Headers',
         'Origin, X-Requested-With, Content-Type, Accept, Authorization'
     );
     if (req.method == 'OPTIONS') {
@@ -32,6 +34,8 @@ app.use((req, res, next) => {
 
 //Acionando as rotas
 app.use('/', rotaHome);
+app.use('/atividade', rotaAtividade);
+app.use('/video', rotaVideo);
 
 
 app.use((req, res, next) => {
