@@ -3,7 +3,7 @@ CREATE TABLE atividade(
 	ID SERIAL PRIMARY KEY,
 	titulo VARCHAR(50),
 	descricao VARCHAR(300),
-	dataDaAtividade TIMESTAMP
+	dataDaAtividade TIMESTAMPTZ
 );
 
 /*Inserir valores iniciais de duas atividades*/
@@ -11,14 +11,14 @@ INSERT INTO atividade(titulo, descricao, dataDaAtividade)
 VALUES(
 	'N2 PDM', 
 	'Atividade para concessão da nota da segunda etapa de Programação para Dispositivos Móveis', 
-	'2022-03-23 15:00:00'
+	'2022-03-23T15:00:00-3'
 );
 
 INSERT INTO atividade(titulo, descricao, dataDaAtividade)
 VALUES(
 	'N1 PDM', 
 	'Atividade para concessão da nota da primeira etapa de Programação para Dispositivos Móveis', 
-	'2022-02-15 20:40:00'
+	'2022-02-15 20:40:00-3'
 );
 
 /*Listar atividades por data em ordem crescente*/

@@ -7,5 +7,4 @@ exports.pg = {
     senha: "root",   //Seu password postgres
     db: "agenda_ifce",      //Seu banco de dados do postgres
     host: "localhost",      //Use localhost ou o IP (127.0.0.1)
-    porta: 5432             //Sua port do postgres ou se for usar o Mysql: 3306
 };
